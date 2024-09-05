@@ -190,10 +190,11 @@ body{
   margin-bottom: 100px;
 }
 .about-start{
-  font-size: 2.5em;
+  font-size: 2.4em;
   color: orange;
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font: t;
 }
 .about-intro{
   color: antiquewhite;
@@ -210,10 +211,10 @@ body{
   text-decoration: none;
 }
 .my-resume p{
-  font-size: 2.5em;
+  font-size: 2.2em;
   text-align: center;
   color: orange;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .resume-btn{
   display: block;
@@ -235,7 +236,7 @@ body{
 }
 
 .form-text{
-  font-size: 1.6em;
+  font-size: 1.7em;
   text-align: center;
   font-style:italic;
   margin-bottom: 30px;
@@ -828,6 +829,9 @@ footer{
     margin-left: 0;
     text-align: center;
   }
+  .about-intro{
+    font-size: 0.9em;
+  }
   .my-resume p{
     font-size: 1.3em;
   }
@@ -835,6 +839,7 @@ footer{
     width: 70%;
     font-size: 0.9em;
   }
+
   .form-text{
     font-size: 1em;
   }
@@ -844,15 +849,13 @@ footer{
     padding: 40px 20px;
     margin: 20px auto;
   }
-
   .form-text {
     text-align: center;
     font-size: 1.2em;
     margin-bottom: 20px;
     margin-top: -20px;
-    width: 90%;
+    width: 100%;
   }
-
   .custom-hover {
     width: 80%;
     font-size: 18px;
