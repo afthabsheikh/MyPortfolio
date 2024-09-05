@@ -236,6 +236,7 @@ body{
 }
 
 .form-text{
+  text-align: center;
   font-size: 1.7em;
   text-align: center;
   font-style:italic;
@@ -718,6 +719,10 @@ footer{
     width: 70%;
     margin-bottom: -10px;
   }
+  .form-text{
+    width: 80%;
+    margin-left: 30px;
+  }
 
   /* Skills section  */
   .skill h1 {
@@ -840,9 +845,6 @@ footer{
     font-size: 0.9em;
   }
 
-  .form-text{
-    font-size: 1em;
-  }
   .form {
     width: 80%;
     max-width: none;
@@ -850,11 +852,12 @@ footer{
     margin: 20px auto;
   }
   .form-text {
-    text-align: center;
     font-size: 1.2em;
     margin-bottom: 20px;
     margin-top: -20px;
-    width: 100%;
+    width: 80%;
+    margin-left: 30px;
+    text-align: center;
   }
   .custom-hover {
     width: 80%;
