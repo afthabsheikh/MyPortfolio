@@ -66,8 +66,9 @@ function App() {
 
   return (
     <>
-    <div className="body-container">
     <Router>
+      <body>
+      <div className="body-container">
       <Navbar/>
       <Alert alert={alert} />
       <Routes>
@@ -75,9 +76,10 @@ function App() {
       <Route exact path="/skills" element={ <Skills/> } />
       <Route exact path="/contact" element={ <Contact/> } />
       </Routes>
+      </div>
+      </body>
       <Footer currentName={currentName} />
     </Router>
-    </div>
     </>
   );
 }

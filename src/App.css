@@ -1,9 +1,24 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Times New Roman', Times, serif;
 }
+body{
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+}
+.body-container{
+  position: relative;
+  padding-bottom: 5px;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+
 
 /* navbar section */
 .navbar{
@@ -94,14 +109,6 @@
 
 
 /* about section */
-.body-container{
-  margin: 0;
-  padding-bottom: 5px;
-  width: 100%;
-  min-height: 100vh;
-  background-color: #000000;
-}
-
 .profile-info-container{
   width: 100%;
   height: max-content;
@@ -118,8 +125,8 @@
   margin-left: 120px;
   border-top-left-radius: 90px;
   border-bottom-right-radius: 50px;
-  background: linear-gradient(110deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-  box-shadow: -30px -30px 20px rgba(255, 255, 255, .1);
+  background: linear-gradient(110deg, rgba(255, 255, 255, 0.397), rgba(255, 255, 255, 0));
+  box-shadow: -30px -30px 20px rgba(255, 255, 255, 0.151);
   overflow: hidden;
   transform: perspective(150px) rotateY(2deg);
 }
@@ -128,8 +135,6 @@
   content: '';
   width: 100%;
   height: 100%;
-  /* backdrop-filter: blur(2px); */
-  /* -webkit-backdrop-filter: blur(10px); */
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   border-left: 1px solid rgba(255, 255, 255, 0.4);
   z-index: 1;
@@ -517,15 +522,17 @@
 hr{
   position: sticky;
   height: 3px;
-  margin: 20px 0;
+  margin: 0;
   border: none;
   background-color: white;
   z-index: 1000;
 }
 footer{
-  position: sticky;
+  height: 80px;
+  position:sticky;
   color: orange;
-  font-size: 1.1rem;
+  margin: 0;
+  font-size: 1.2rem;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -535,9 +542,9 @@ footer{
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  height: 30px;
+  height: 40px;
   margin: 0px;
-  padding-top: 11px;
+  padding-top: 19px;
 }
 
 
@@ -549,7 +556,7 @@ footer{
     padding: 10px 0;
   }
   .navbar li {
-    margin: 0px 20px;
+    margin: 0px 40px;
     font-size: 18px;
   }
   .horizontal-white-line {
@@ -568,6 +575,7 @@ footer{
   .profile-info-container {
     flex-direction: column;
     padding-top: 20px;
+    margin-top: 50px;
     margin-bottom: 80px;
   }
   .profile-img {
@@ -588,6 +596,9 @@ footer{
     width: 50%;
     margin-left: 0;
     text-align: center;
+  }
+  .form{
+    width: 60%;
   }
 
   /* Skills section adjustments */
@@ -624,12 +635,11 @@ footer{
 
   /* Footer */
   footer {
-    margin-top: 60px;
     font-size: 0.9rem;
     padding: 10px;
   }
   .footer-name-change{
-    padding-top: 12px;
+    padding-top: 26px;
   }
 }
 
@@ -637,13 +647,17 @@ footer{
 
 @media (max-width: 800px) {
   /* Navbar */
+  *{
+    margin: 0;
+    padding: 0;
+  }
   .navbar {
     height: 3.5rem;
     flex-direction: column;
     padding: 5px 0;
   }
   .navbar li {
-    margin: 0px 10px;
+    margin: 0px 30px;
     font-size: 16px;
   }
   .horizontal-white-line {
@@ -660,6 +674,7 @@ footer{
 
   /* About section  */
   .profile-info-container {
+    margin-top: 40px;
     flex-direction: column;
     padding-top: 10px;
     margin-bottom: 50px;
@@ -667,15 +682,18 @@ footer{
   .profile-img {
     height: 250px;
     width: 120px;
-    margin-right: 100px;
+    margin-right: 180px;
     margin-top: 10px;
   }
   .blurred-box {
-    width: 90%;
+    width: 80%;
     height: 350px;
     margin-left: 0;
-    border-top-left-radius: 30px;
+    border-top-left-radius: 0px;
     border-bottom-right-radius: 20px;
+  }
+  .blurred-box::before{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
   .intro {
     font-size: 1.5rem;
@@ -683,8 +701,21 @@ footer{
     margin-left: 0;
     text-align: center;
   }
+  .about-intro{
+    font-size: 1.1em;
+  }
+  .my-resume{
+    width: 100%;
+  }
+  .my-resume p{
+    font-size: 1.4em;
+  }
   .resume-btn{
     font-size: 1em;
+  }
+  .form{
+    width: 70%;
+    margin-bottom: -10px;
   }
 
   /* Skills section  */
@@ -734,6 +765,7 @@ footer{
 
   /* Footer */
   footer {
+    margin: 0;
     font-size: 0.8rem;
     padding: 5px;
   }
@@ -741,7 +773,7 @@ footer{
     height: 2px;
   }
   .footer-name-change{
-    padding-top: 17px;
+    padding-top: 27px;
   }
 }
 
@@ -751,11 +783,11 @@ footer{
   /* Navbar */
   .navbar {
     height: 3rem;
-    flex-direction: column;
-    padding: 5px 0;
+    padding: 0px 0;
+    display: flex;
   }
   .navbar li {
-    margin: 0px 5px;
+    margin: 10px 25px;
     font-size: 14px;
   }
   .horizontal-white-line {
@@ -783,11 +815,12 @@ footer{
     margin-top: 5px;
   }
   .blurred-box {
-    width: 95%;
+    width: 90%;
     height: 300px;
     margin-left: 0;
-    border-top-left-radius: 20px;
+    border-top-left-radius: 0px;
     border-bottom-right-radius: 15px;
+    box-shadow: -30px 30px 20px rgba(255, 255, 255, 0.171);
   }
   .intro {
     font-size: 1.3rem;
@@ -796,25 +829,28 @@ footer{
     text-align: center;
   }
   .my-resume p{
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .resume-btn {
-    width: 100px;
+    width: 70%;
     font-size: 0.9em;
   }
   .form-text{
     font-size: 1em;
   }
   .form {
-    width: 60%;
+    width: 80%;
     max-width: none;
     padding: 40px 20px;
     margin: 20px auto;
   }
 
   .form-text {
-    font-size: 1.5em;
+    text-align: center;
+    font-size: 1.2em;
     margin-bottom: 20px;
+    margin-top: -20px;
+    width: 90%;
   }
 
   .custom-hover {
@@ -826,6 +862,9 @@ footer{
   /* Skills section */
   .skill h1 {
     font-size: 1.8rem;
+  }
+  .skill h3{
+    font-size: 1.2em;
   }
   .skill-box {
     flex-wrap: wrap;
@@ -846,6 +885,12 @@ footer{
   }
 
   /* Social media section */
+  .contact-container h4{
+    font-size: 1.2em;
+  }
+  .contact-container p{
+    font-size: 1em;
+  }
   .social-media-container {
     flex-direction: column;
     width: 100%;
@@ -878,8 +923,5 @@ footer{
   }
   hr {
     height: 1px;
-  }
-  .footer-name-change {
-    padding-top: 17px;
   }
 }
