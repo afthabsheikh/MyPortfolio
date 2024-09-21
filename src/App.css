@@ -897,23 +897,49 @@ footer{
   .contact-container p{
     font-size: 1em;
   }
+  .contact-container h5{
+    font-size: 1em;
+  }
   .social-media-container {
-    flex-direction: column;
     width: 100%;
-    height: 120px;
+    height: fit-content;
+    margin-top: 90px;
     width: 100%;
     gap: 5px;
   }
   .social-media-contact{
-    height: 120px;
+    height: 400px;
+    align-items: start;
   }
-  .snap-contact,
-  .instagram-contact,
-  .facebook-contact,
-  .linkedin-contact {
+  .snap-contact{
+    position: absolute;
     width: 40px;
     height: 70px;
     margin: 8px 0;
+    left: 10%;
+  }
+  .instagram-contact{
+    position: absolute;
+    width: 40px;
+    height: 70px;
+    margin: 8px 0;
+    left: 73%;
+  }
+  .facebook-contact{
+    position: absolute;
+    width: 40px;
+    height: 70px;
+    top: 200px;
+    margin: 8px 0;
+    left: 25%;
+  }
+  .linkedin-contact {
+    position: absolute;
+    width: 40px;
+    height: 70px;
+    top: 200px;
+    margin: 8px 0;
+    left: 60%;
   }
 
   /* Alert section */

@@ -90,7 +90,7 @@ export default function About(props) {
         </div>
         <div className="my-resume">
             <p>Find my resume here</p>
-            <a href="Files/Resume.pdf" download="Resume.pdf"><input type="button" value="My Resume" onClick={handleDownload} className="resume-btn" /></a>
+            <a href="Files/afthabResume.pdf" download="Afthab-Resume.pdf"><input type="button" value="My Resume" onClick={handleDownload} className="resume-btn" /></a>
         </div>
         <h1 className="form-text">Want to share something with me? Feel free</h1>
         <form ref={form} onSubmit={sendEmail} method="POST" className="form">

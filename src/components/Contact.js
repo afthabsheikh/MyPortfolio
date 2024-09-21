@@ -7,7 +7,7 @@ export default function Contact(props){
         <div className="contact-container">
             <h4>Get in touch for queries,</h4>
             <p>📞 Phone: 6360883079</p>
-            <p>📮 Mail: <Link className="link" to="mailto:afthabsheikh11710@gmail.com">afthabsheikh117101@gmail.com</Link></p>
+            <p>📮 Mail: <Link className="link" to="mailto:afthabsheikh11710@gmail.com">afthabsheikh11710@gmail.com</Link></p>
             <h5>🌐Connect with social media</h5>
             <div className="social-media-container">
                 <ul className="social-media-contact">

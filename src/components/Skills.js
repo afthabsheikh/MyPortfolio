@@ -12,6 +12,7 @@ export default function Skills(){
                     <li className="skill-list"><Link className="link" to=""><img className="skill-img" src="images/js.png" alt="JavaScript" /></Link></li>
                     <li className="skill-list"><Link className="link" to=""><img className="skill-img" src="images/c-program.png" alt="C" /></Link></li>
                     <li className="skill-list"><Link className="link" to=""><img className="skill-img" src="images/java.png" alt="Java" /></Link></li>
+                    <li className="skill-list"><Link className="link" to=""><img className="skill-img" src="images/C-sharp.png" alt="C#" /></Link></li>
                 </div>
                 <h3>FrontEnd technologies 🎨</h3>
                 <div className="skill-box">
@@ -39,6 +40,8 @@ export default function Skills(){
                     <li className="skill-list"><Link className="link" to=""><img className="skill-img" src="images/android-studio.png" alt="Android studio" /></Link></li>
                     <li className="skill-list"><Link className="link" to=""><img className="skill-img" src="images/figma.png" alt="Figma" /></Link></li>
                     <li className="skill-list"><Link className="link" to=""><img className="skill-img" src="images/wordpress.png" alt="WordPress" /></Link></li>
+                    <li className="skill-list"><Link className="link" to=""><img className="skill-img" src="images/powerBI.png" alt="Power BI" /></Link></li>
+                    <li className="skill-list"><Link className="link" to=""><img className="skill-img" src="images/Excel.png" alt="Microsoft Excel" /></Link></li>
                 </div>
                 <div className="github-profile">
                     <h3><i className="fab fa-github"> For more visit my github profile</i></h3>
